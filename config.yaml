@@ -1,0 +1,15 @@
+---
+ - hosts: all
+   become: true
+   tasks:
+
+    - name: Create motd
+      copy:
+        content: Ansible Managed motd by Tracey
+        dest: /home/tracey/motd 
+
+
+    - name: Create New User
+      user:
+          name: Bringuela
+          state: present 
