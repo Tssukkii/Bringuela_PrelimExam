@@ -1,0 +1,12 @@
+---
+  - hosts: all
+    become: true
+    tasks:
+    
+    - name: install Java open-jdk
+      apt:
+        name: default-jre
+
+    - name: install Maria DB
+      apt:
+        name: mariadb-server

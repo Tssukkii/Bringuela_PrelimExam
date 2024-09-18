@@ -1,0 +1,7 @@
+server:
+  hosts:
+      192.168.56.114:
+      192.168.56.113:
+  vars:
+    ansible_user: tracey
+    ansible_ssh_private_key_file: /home/tracey/.ssh/id_rsa
